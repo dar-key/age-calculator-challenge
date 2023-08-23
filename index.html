@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Age calculator app</title>
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div id="age-calculator-container">
+    <div class="sub">
+      <div class="input-params">
+        <div class="day el">
+          <h4 class="text">D A Y</h4>
+          <form>
+            <input type="number" id="inp-d" placeholder="DD">
+          </form>
+        </div>
+
+        <div class="month el">
+          <h4 class="text">M O N T H</h4>
+          <form>
+            <input type="number" id="inp-m" placeholder="MM">
+          </form>
+        </div>
+
+        <div class="year el">
+          <h4 class="text">Y E A R</h4>
+          <form>
+            <input type="number" id="inp-y" placeholder="YYYY">
+          </form>
+        </div>
+      </div>
+
+      <div>
+        <p id="invalid-date">
+          Must be a valid date
+        </p>
+      </div>
+      
+      <div class="btn-div">
+        <div class="line">
+          <button class="submit-btn">
+            <img src="./assets/images/icon-arrow.svg" alt="">
+          </button>
+        </div>
+      </div>
+
+      <div class="output">
+        <h2 class="years">
+          <span class="number">--</span> years
+        </h2>
+        <h2 class="months">
+          <span class="number">--</span> months
+        </h2>
+        <h2 class="days">
+          <span class="number">--</span> days
+        </h2>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
